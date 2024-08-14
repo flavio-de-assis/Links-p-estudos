@@ -5,7 +5,7 @@
  
 
 :root {
-    --cor0: #1E201E; 
+    --cor1: #1E201E; 
     --cor2: #3C3D37;
     --cor3: #697565;
     --cor4: #ECDFCC;
@@ -24,7 +24,7 @@
 
 
 body {
-    background-color: var(--cor2);
+    background-color: var(--cor5);
     
 }
 
@@ -41,20 +41,14 @@ p {
 
 header {
     padding-bottom: 50px;
-    background-color: var(--cor0);
+    background-color: var(--cor1);
     color: white;
     text-align: center;
     height: 30px;
   
 }
 
-#js {
-    padding-top: 30px;    
-}
 
-#rt {
-    padding-top: 10px;
-}
 .card {
     
     background-color: white;
@@ -73,3 +67,37 @@ header {
     box-shadow: 3px 5px 8px  rgb(248, 248, 248);
 }
 
+
+section {
+    padding: 20px;
+
+}
+
+#php {
+    padding-top: 40px;
+}
+
+
+#cs {
+    padding-top: 40px;
+}
+
+#js {
+    padding-top: 30px;    
+}
+
+#rt {
+    padding-top: 10px;
+}
+
+#c {
+    padding-top: 10px;
+}
+
+#aws {
+    padding-top: 30px;
+}
+
+#git {
+    padding-top: 60px;
+}
