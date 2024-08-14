@@ -34,9 +34,6 @@ main {
     
 }
 
-section {
-    padding: 20px;
-}
 h1 {
     background-color: var(--cor0);
     color: white;
@@ -46,10 +43,15 @@ h1 {
 
 header {
     padding-bottom: 30px;
+  
 }
 
 #js {
-    padding-top: 30px;
+    padding-top: 30px;    
+}
+
+#rt {
+    padding-top: 10px;
 }
 .card {
     
