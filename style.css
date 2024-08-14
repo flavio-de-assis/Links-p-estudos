@@ -31,17 +31,20 @@ body {
 main {
     display: flex;
     flex-wrap: wrap;
-    
+    padding: 20px;
 }
 
-h1 {
+p {
+    color: white;
+}
+
+
+header {
+    padding-bottom: 50px;
     background-color: var(--cor0);
     color: white;
     text-align: center;
-}
-
-header {
-    padding-bottom: 30px;
+    height: 30px;
   
 }
 
