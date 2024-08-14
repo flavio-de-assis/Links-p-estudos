@@ -101,3 +101,12 @@ section {
 #git {
     padding-top: 60px;
 }
+
+#fa {
+   color: white;
+   
+}
+
+#fa:hover {
+    background-color: var(--cor3);
+}
