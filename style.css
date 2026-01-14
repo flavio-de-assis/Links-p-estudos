@@ -1,11 +1,8 @@
 @charset "utf-8";
-
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
- 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 
 :root {
-    --cor1: #1E201E; 
+    --cor1: #1E201E;
     --cor2: #3C3D37;
     --cor3: #697565;
     --cor4: #ECDFCC;
@@ -13,100 +10,107 @@
     --font-padrao: "Montserrat", sans-serif;
 }
 
+/* ===== RESET ===== */
 * {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: var(--font-padrao);
-    font-weight: bold;
     text-decoration: none;
 }
 
-
-
+/* ===== BODY ===== */
 body {
-    background-color: var(--cor5);
-    
+    background-color: var(--cor2);
+    color: #ffffff;
 }
 
-main {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 20px;
-}
-
-p {
-    color: white;
-}
-
-
+/* ===== HEADER ===== */
 header {
-    padding-bottom: 50px;
     background-color: var(--cor1);
-    color: white;
+    padding: 40px 20px;
     text-align: center;
-    height: 30px;
-  
 }
 
+header h1 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
 
+header p {
+    margin-top: 8px;
+    font-size: 0.95rem;
+    font-weight: 400;
+    color: var(--cor4);
+}
+
+/* ===== MAIN / GRID ===== */
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+    padding: 40px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* ===== CARD ===== */
 .card {
-    
-    background-color: white;
-    border: 1px solid black;
-    margin-left: 30px;
-    height: 270px;
-    width: 270px;
-    text-align: center;
-    padding: 5px;
+    background-color: #ffffff;
     border-radius: 20px;
-    box-shadow: 3px 5px 8px rgba(0, 0, 0, 0.432);
-    
+    height: 260px;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card:hover {
-    box-shadow: 3px 5px 8px  rgb(248, 248, 248);
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6);
 }
 
-
-section {
-    padding: 20px;
-
+/* ===== TITULO DO CARD ===== */
+.card h2 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--cor2);
+    margin-bottom: 10px;
 }
 
-#php {
-    padding-top: 40px;
+/* ===== IMAGEM ===== */
+.card img {
+    max-width: 130px;
+    max-height: 130px;
+    object-fit: contain;
 }
 
-
-#cs {
-    padding-top: 40px;
+/* ===== FOOTER DO CARD (SE TIVER) ===== */
+.card p {
+    font-size: 0.85rem;
+    color: var(--cor3);
+    text-align: center;
 }
 
-#js {
-    padding-top: 30px;    
+/* ===== LINKS ===== */
+.card a {
+    color: inherit;
 }
 
-#rt {
-    padding-top: 10px;
-}
+/* ===== RESPONSIVO ===== */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.6rem;
+    }
 
-#c {
-    padding-top: 10px;
-}
-
-#aws {
-    padding-top: 30px;
-}
-
-#git {
-    padding-top: 60px;
-}
-
-#fa {
-   color: white;
-   
-}
-
-#fa:hover {
-    background-color: var(--cor3);
+    main {
+        padding: 20px;
+        gap: 20px;
+    }
 }
