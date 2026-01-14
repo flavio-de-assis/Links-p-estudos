@@ -1,4 +1,4 @@
-# 🔗 Links para Estudos — Flávio De Assis
+# 🔗 Links para Estudos — Flávio De Assis 
 
 Projeto pessoal criado para centralizar links úteis para estudo de **programação e tecnologia**, organizados por linguagem e área de conhecimento.
 
